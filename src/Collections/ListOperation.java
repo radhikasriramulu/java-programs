@@ -15,29 +15,31 @@ import java.util.ListIterator;
 public class ListOperation {
 
 	public static void main(String[] args) {
+		
+		
+		
+		
 		// TODO Auto-generated method stub
 		List aList = new ArrayList();
 		aList.add("Hello");
 		aList.add("World");
-		
-		
+
 		// Search
 		boolean contains = aList.contains("Hello");
 		System.out.println(contains);
-		
-		
-		//Iterator
+
+		// Iterator
 		Iterator iterator = aList.iterator();
-		while(iterator.hasNext()) {
-			String element =(String) iterator.next();
+		while (iterator.hasNext()) {
+			String element = (String) iterator.next();
 			System.out.println(element);
-			
+
 		}
-		
-		//Reverse Order using ListIterator
+
+		// Reverse Order using ListIterator
 		ListIterator listIterator = aList.listIterator();
-		while(listIterator.hasPrevious()) {
-			String element = (String) listIterator.previous();
+		while (listIterator.hasNext()) {
+			String element = (String) listIterator.next();
 			System.out.println(element);
 		}
 

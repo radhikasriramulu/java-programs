@@ -11,7 +11,8 @@ public class FindDuplicatesInArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Integer[] a = {1,5,3,4,1,5,7,8,1,8};
+//		Integer[] a = {1,5,3,4,1,5,7,8,1,8};
+		String[] a = {"Hello","World","Hello"};
 		Set set = new HashSet();
 		for(int i=0;i<a.length;i++) {
 			set.add(a[i]);
